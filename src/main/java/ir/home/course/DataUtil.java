@@ -10,6 +10,7 @@ import java.util.List;
  * Created by Home on 2018-01-01.
  */
 public class DataUtil {
+
     public static List<Apple> createSampleApple(){
         return new ArrayList<Apple>(Arrays.asList(
                 new Apple("GREEN"),

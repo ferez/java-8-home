@@ -6,5 +6,6 @@ package ir.home.course;
 public class App {
     public static void main(String[] args) {
 
+
     }
 }
