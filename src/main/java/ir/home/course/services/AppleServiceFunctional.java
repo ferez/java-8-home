@@ -6,23 +6,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Home on 2018-01-03.
+ * Created by Home on 2018-01-05.
  */
-public class AppleServiceImperative implements AppleService {
-
+public class AppleServiceFunctional implements AppleService {
     public List<Apple> filterGreenApples(List<Apple> appleList) {
+        return null;
+    }
+
+    public List<Apple> filterApples(List<Apple> appleList, ApplePredicate predicate) {
         List<Apple> greenApples = new ArrayList<Apple>();
 
         for(Apple apple : appleList){
-            if (APPLE_COLOR_GREEN.equals(apple.getColor())){
+            if (predicate.test(apple)){
                 greenApples.add(apple);
             }
         }
         return greenApples;
-    }
 
-    public List<Apple> filterApples(List<Apple> appleList, ApplePredicate predicate) {
-        throw new RuntimeException("Not implemented yet!");
     }
-
 }

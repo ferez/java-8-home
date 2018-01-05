@@ -6,7 +6,7 @@ package ir.home.course.services;
 public class ServiceFactory {
 
     public static AppleService getAppleService(){
-        return new AppleServiceImperative();
+        return new AppleServiceFunctional();
 
     }
 }
