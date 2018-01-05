@@ -11,14 +11,14 @@ public class TestDataUtil {
 
     public static List<Apple> createSampleApple(){
         return new ArrayList<Apple>(Arrays.asList(
-                new Apple("GREEN"),
-                new Apple("GREEN"),
-                new Apple("RED"),
-                new Apple("YELLOW"),
-                new Apple("GREEN"),
-                new Apple("RED"),
-                new Apple("YELLOW"),
-                new Apple("YELLOW")
+                new Apple("GREEN", 12),
+                new Apple("GREEN", 10),
+                new Apple("RED", 5),
+                new Apple("YELLOW", 6),
+                new Apple("GREEN", 1),
+                new Apple("RED", 10),
+                new Apple("YELLOW", 13),
+                new Apple("YELLOW", 16)
         ));
     }
 }
