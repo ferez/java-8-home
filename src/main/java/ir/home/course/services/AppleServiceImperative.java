@@ -4,6 +4,7 @@ import ir.home.course.model.Apple;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -36,5 +37,10 @@ public class AppleServiceImperative implements AppleService {
     @Override
     public List<Apple> filterApples(List<Apple> appleList, Function<Apple, Boolean> predicate) {
         throw new RuntimeException("Not implemented yet!");
+    }
+
+    @Override
+    public String getSS(String s, Integer i, BiFunction<String, Integer, String> function) {
+        return null;
     }
 }

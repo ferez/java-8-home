@@ -3,6 +3,7 @@ package ir.home.course.services;
 import ir.home.course.model.Apple;
 
 import java.util.List;
+import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -13,9 +14,8 @@ public interface AppleService {
 
     String APPLE_COLOR_GREEN = "GREEN";
 
-//    List<Apple> filterGreenApples(List<Apple> appleList);
-
     List<Apple> filterApples(List<Apple> appleList, ApplePredicate predicate);
     List<Apple> filterApples(List<Apple> appleList, Predicate<Apple> predicate);
     List<Apple> filterApples(List<Apple> appleList, Function<Apple, Boolean> predicate);
+    String getSS(String s, Integer i, BiFunction<String , Integer, String> function);
 }
